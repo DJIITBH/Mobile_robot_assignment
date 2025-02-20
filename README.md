@@ -49,6 +49,9 @@ To provide specific waypoints as arguments:
 ```sh
 ros2 run bumperbot_controller waypoint_navigation.py --ros-args -p waypoint_1_x:=20.0
 ```
+## Video Demonstration
+
+Watch the demonstration video here: [Controller Demo](https://youtu.be/UHj1qNwbf7M?si=aPFlf9rosfzlYngn)
 
 ## Additional Notes
 
