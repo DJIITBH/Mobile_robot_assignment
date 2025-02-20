@@ -27,6 +27,9 @@
       <geometry>
         <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
       </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -34,6 +37,7 @@
         <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
       </geometry>
     </collision>
+    
   </link>
 
   <joint name="base_joint" type="fixed">

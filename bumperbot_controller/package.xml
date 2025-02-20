@@ -13,6 +13,8 @@
 <!-- new dependencies declare here for the launch file created for controller launching! -->
   <exec_depend>ros2launch</exec_depend>
   <exec_depend>controller_manager</exec_depend>
+  <exec_depend>robot_localization</exec_depend>
+
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
@@ -21,6 +23,9 @@
   <depend>nav_msgs</depend>
   <depend>tf2</depend>
   <depend>t2_ros</depend>
+  <depend>rclcpp</depend>
+  <depend>eigen</depend>
+
 
 
   <exec_depend>tf_transformations</exec_depend>

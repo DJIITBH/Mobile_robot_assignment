@@ -1,0 +1,1 @@
+ros2 run bumperbot_controller waypoint_navigation.py --ros-args -p waypoint_1_x:=20.0 -> for giving arguments to waypoint navigation file

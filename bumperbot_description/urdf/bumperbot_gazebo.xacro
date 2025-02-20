@@ -2,7 +2,37 @@
 
 <robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
 
+ <!-- <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+     <material name="red">
+        <color rgba="1 0 0 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material> -->
+    <xacro:property name="body_color_blue" value="Gazebo/Blue"/>
+
+
+   <!-- <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+   </gazebo> -->
+
+
     <gazebo reference = "wheel_right_link">
+        <material>
+            Gazebo/Blue
+        </material>
         <mu1>100000000000000.0</mu1>
         <mu2>100000000000000.0</mu2>
         <kp>1000000000000.0</kp>
@@ -13,6 +43,9 @@
     </gazebo>
 
     <gazebo reference = "wheel_left_link">
+        <material>
+            Gazebo/Blue
+        </material>
         <mu1>100000000000000.0</mu1>
         <mu2>100000000000000.0</mu2>
         <kp>1000000000000.0</kp>
@@ -23,6 +56,9 @@
     </gazebo>
 
     <gazebo reference = "caster_front_link">
+        <material>
+            Gazebo/Black
+        </material>
         <mu1>0.1</mu1>
         <mu2>0.1</mu2>
         <kp>1000000</kp>
@@ -32,6 +68,9 @@
     </gazebo>
 
     <gazebo reference = "caster_rear_link">
+        <material>
+            Gazebo/Black
+        </material>
         <mu1>0.1</mu1>
         <mu2>0.1</mu2>
         <kp>1000000</kp>
@@ -65,7 +104,7 @@
         <gz_frame_id>imu_link</gz_frame_id>
         <topic>imu</topic>
         <imu>
-            <angular_velocity>
+            <!-- <angular_velocity>
                 <x>
                     <noise type="gaussian">
                         <mean>0.0</mean>
@@ -104,7 +143,7 @@
                         <stddev>1.7e-2</stddev>
                     </noise>
                 </z>
-            </linear_acceleration>
+            </linear_acceleration> -->
         </imu>
         </sensor>
         
